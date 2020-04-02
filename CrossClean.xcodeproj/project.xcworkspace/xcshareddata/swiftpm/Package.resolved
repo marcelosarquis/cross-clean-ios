@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Autobahn",
+        "repositoryURL": "https://github.com/VivyTeam/autobahn-ios.git",
+        "state": {
+          "branch": "master",
+          "revision": "7c4a8e031c39bb0cab5387f4b147022a272c99b3",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
