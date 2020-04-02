@@ -21,4 +21,4 @@ Each example app should:
 
 ## Cross-CLEAN Architecture
 
-
+![alt text](cross_clean_architecture.png "Cross-CLEAN")
