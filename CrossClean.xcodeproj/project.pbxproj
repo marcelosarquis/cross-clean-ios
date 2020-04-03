@@ -20,6 +20,11 @@
 		C05CB4332436279000E852E2 /* UserDetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05CB4322436279000E852E2 /* UserDetailUseCase.swift */; };
 		C05CB4352436290100E852E2 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05CB4342436290100E852E2 /* Post.swift */; };
 		C05CB4382436339F00E852E2 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05CB4362436339F00E852E2 /* UserDetailViewController.swift */; };
+		C0635BB424376D470092E804 /* UsersListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0635BB224376D470092E804 /* UsersListTableViewCell.swift */; };
+		C0635BB524376D470092E804 /* UsersListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0635BB324376D470092E804 /* UsersListTableViewCell.xib */; };
+		C0C244BA243773C000FCF504 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C244B9243773C000FCF504 /* String+Extension.swift */; };
+		C0C244BF2437753C00FCF504 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C244BD2437753C00FCF504 /* PostTableViewCell.swift */; };
+		C0C244C02437753C00FCF504 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0C244BE2437753C00FCF504 /* PostTableViewCell.xib */; };
 		C0CE39A924348CDA0056FED8 /* Autobahn in Frameworks */ = {isa = PBXBuildFile; productRef = C0CE39A824348CDA0056FED8 /* Autobahn */; };
 		C0CE39AB24349CB30056FED8 /* UsersListViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE39AA24349CB30056FED8 /* UsersListViewControllerDataSource.swift */; };
 		C0CE39AF24349E6D0056FED8 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE39AE24349E6D0056FED8 /* UITableViewCell+Extension.swift */; };
@@ -43,6 +48,11 @@
 		C05CB4322436279000E852E2 /* UserDetailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailUseCase.swift; sourceTree = "<group>"; };
 		C05CB4342436290100E852E2 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		C05CB4362436339F00E852E2 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		C0635BB224376D470092E804 /* UsersListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListTableViewCell.swift; sourceTree = "<group>"; };
+		C0635BB324376D470092E804 /* UsersListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersListTableViewCell.xib; sourceTree = "<group>"; };
+		C0C244B9243773C000FCF504 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		C0C244BD2437753C00FCF504 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		C0C244BE2437753C00FCF504 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		C0CE39AA24349CB30056FED8 /* UsersListViewControllerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewControllerDataSource.swift; sourceTree = "<group>"; };
 		C0CE39AE24349E6D0056FED8 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 		C0CE39B22434AA0B0056FED8 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -132,9 +142,8 @@
 		C05CB42A2436259500E852E2 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				C041A6172434812300C86E83 /* UsersListViewController.swift */,
-				C0CE39AA24349CB30056FED8 /* UsersListViewControllerDataSource.swift */,
-				C04646382434ED6A00C2B3AF /* UsersSearchResultsController.swift */,
+				C0635BB024376D1A0092E804 /* Controller */,
+				C0635BB124376D260092E804 /* Cell */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -176,10 +185,47 @@
 		C05CB42F243626D400E852E2 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				C0C244BB2437751F00FCF504 /* Controller */,
+				C0C244BC2437752600FCF504 /* Cell */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C0635BB024376D1A0092E804 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C041A6172434812300C86E83 /* UsersListViewController.swift */,
+				C0CE39AA24349CB30056FED8 /* UsersListViewControllerDataSource.swift */,
+				C04646382434ED6A00C2B3AF /* UsersSearchResultsController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C0635BB124376D260092E804 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C0635BB224376D470092E804 /* UsersListTableViewCell.swift */,
+				C0635BB324376D470092E804 /* UsersListTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C0C244BB2437751F00FCF504 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				C05CB4362436339F00E852E2 /* UserDetailViewController.swift */,
 				C0FF86E62436384E00F208AC /* UserDetailViewControllerDataSource.swift */,
 			);
-			path = App;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C0C244BC2437752600FCF504 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C0C244BD2437753C00FCF504 /* PostTableViewCell.swift */,
+				C0C244BE2437753C00FCF504 /* PostTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		C0CE39AC24349CCF0056FED8 /* Utilities */ = {
@@ -193,6 +239,7 @@
 		C0CE39AD24349E3C0056FED8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C0C244B9243773C000FCF504 /* String+Extension.swift */,
 				C0CE39AE24349E6D0056FED8 /* UITableViewCell+Extension.swift */,
 			);
 			path = Extensions;
@@ -263,7 +310,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C041A6202434812600C86E83 /* LaunchScreen.storyboard in Resources */,
+				C0635BB524376D470092E804 /* UsersListTableViewCell.xib in Resources */,
 				C041A61D2434812600C86E83 /* Assets.xcassets in Resources */,
+				C0C244C02437753C00FCF504 /* PostTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +331,8 @@
 				C0FF86E72436384E00F208AC /* UserDetailViewControllerDataSource.swift in Sources */,
 				C05CB4352436290100E852E2 /* Post.swift in Sources */,
 				C041A6142434812300C86E83 /* AppDelegate.swift in Sources */,
+				C0C244BA243773C000FCF504 /* String+Extension.swift in Sources */,
+				C0635BB424376D470092E804 /* UsersListTableViewCell.swift in Sources */,
 				C05CB4332436279000E852E2 /* UserDetailUseCase.swift in Sources */,
 				C05CB4312436276F00E852E2 /* UserDetailProvider.swift in Sources */,
 				C0CE39AF24349E6D0056FED8 /* UITableViewCell+Extension.swift in Sources */,
@@ -289,6 +340,7 @@
 				C041A62E24348A5200C86E83 /* UserListProvider.swift in Sources */,
 				C04646392434ED6A00C2B3AF /* UsersSearchResultsController.swift in Sources */,
 				C041A63324348AE300C86E83 /* User.swift in Sources */,
+				C0C244BF2437753C00FCF504 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

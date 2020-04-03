@@ -52,12 +52,10 @@ class UsersListViewController: UITableViewController {
         
         title = "Users"
         tableView.dataSource = dataSource
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.identifier)
+        tableView.register(UsersListTableViewCell.nib, forCellReuseIdentifier: UsersListTableViewCell.identifier)
         tableView.tableFooterView = UIView()
-        navigationItem.largeTitleDisplayMode = .never
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
-        definesPresentationContext = true
         
         dependencies.userListUseCase.fetch { [weak self] result in
             switch result {
@@ -72,6 +70,7 @@ class UsersListViewController: UITableViewController {
 }
 
 extension UsersListViewController {
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let user = dataSource.getUser(for: indexPath) else { return }
         delegate?.usersViewControlleDidSelect(user)
@@ -94,8 +93,8 @@ extension UsersListViewController: UISearchBarDelegate {
 extension UsersListViewController: UISearchResultsUpdating {
     
     func updateSearchResults(for searchController: UISearchController) {
-        guard let searchText = searchController.searchBar.text, let usersSearchResultsController = searchController.searchResultsController as? UsersSearchResultsController else { return }
-        let searchResults = dataSource.filter(searchText)
+        guard let query = searchController.searchBar.text, let usersSearchResultsController = searchController.searchResultsController as? UsersSearchResultsController else { return }
+        let searchResults = dataSource.filteredUsers(query)
         usersSearchResultsController.setupDataSource(with: searchResults)
     }
 }

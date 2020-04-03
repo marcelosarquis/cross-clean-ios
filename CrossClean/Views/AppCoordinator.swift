@@ -30,6 +30,7 @@ class AppCoordinator {
         let usersListViewController = UsersListViewController(dependencies: dependencies)
         usersListViewController.delegate = self
         navigation.viewControllers = [usersListViewController]
+        navigation.navigationBar.prefersLargeTitles = true
         window.makeKeyAndVisible()
         window.rootViewController = navigation
     }

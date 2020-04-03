@@ -16,6 +16,10 @@ struct Post: Decodable {
     let id: Int
     let title: String
     let body: String
+    
+    var titleDescription: String {
+        return "\(id.description). \(title)"
+    }
 }
 
 struct PostRequest: RequestProtocol {

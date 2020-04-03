@@ -25,16 +25,13 @@ class UsersSearchResultsController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.identifier)
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.identifier)
+        tableView.register(UsersListTableViewCell.nib, forCellReuseIdentifier: UsersListTableViewCell.identifier)
         tableView.tableFooterView = UIView()
         tableView.dataSource = dataSource
-        tableView.delegate = self
     }
     
     func setupDataSource(with languages: [User]) {
         dataSource.setup(with: languages)
         tableView.reloadData()
     }
-
 }

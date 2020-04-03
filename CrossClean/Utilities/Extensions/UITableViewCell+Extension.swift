@@ -6,7 +6,6 @@
 //  Copyright © 2020 10s. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 extension UITableViewCell {

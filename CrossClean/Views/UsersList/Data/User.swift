@@ -18,6 +18,10 @@ struct User: Decodable {
     let phone: String
     let website: String
     let company: Company
+    
+    var fullName: String {
+        return "\(name) & \(username)"
+    }
 
     struct Address: Decodable {
         let street: String
@@ -25,6 +29,10 @@ struct User: Decodable {
         let city: String
         let zipcode: String
         let geo: Geo
+        
+        var fullAddress: String {
+            return "\(street), \(city)"
+        }
 
         struct Geo: Decodable {
             let lat: String

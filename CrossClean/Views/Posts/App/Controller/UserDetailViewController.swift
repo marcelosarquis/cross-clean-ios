@@ -45,7 +45,8 @@ class UserDetailViewController: UITableViewController {
         
         title = user.name
         tableView.dataSource = dataSource
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.identifier)
+        tableView.register(PostTableViewCell.nib, forCellReuseIdentifier: PostTableViewCell.identifier)
+        tableView.allowsSelection = false
         tableView.tableFooterView = UIView()
         
         dependencies.userDetailUseCase.fetchPost(from: user.id.description) { [weak self] result in
