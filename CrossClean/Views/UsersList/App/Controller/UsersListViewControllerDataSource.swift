@@ -14,7 +14,7 @@ class UsersListViewControllerDataSource: NSObject {
     private var filteredUsers = [String: [User]]()
     private var indexTitles = [String]()
     func setup(with users: [User]) {
-        self.users = users.filter { $0.email.contains("biz") }
+        self.users = users
         update(with: self.users)
     }
 

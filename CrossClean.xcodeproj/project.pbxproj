@@ -25,6 +25,8 @@
 		C0C244BA243773C000FCF504 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C244B9243773C000FCF504 /* String+Extension.swift */; };
 		C0C244BF2437753C00FCF504 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C244BD2437753C00FCF504 /* PostTableViewCell.swift */; };
 		C0C244C02437753C00FCF504 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0C244BE2437753C00FCF504 /* PostTableViewCell.xib */; };
+		C0C61FBF243B112000E31204 /* UserListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C61FBE243B112000E31204 /* UserListInteractor.swift */; };
+		C0C61FC1243B117600E31204 /* UserListProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C61FC0243B117600E31204 /* UserListProviderProtocol.swift */; };
 		C0CE39A924348CDA0056FED8 /* Autobahn in Frameworks */ = {isa = PBXBuildFile; productRef = C0CE39A824348CDA0056FED8 /* Autobahn */; };
 		C0CE39AB24349CB30056FED8 /* UsersListViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE39AA24349CB30056FED8 /* UsersListViewControllerDataSource.swift */; };
 		C0CE39AF24349E6D0056FED8 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE39AE24349E6D0056FED8 /* UITableViewCell+Extension.swift */; };
@@ -53,6 +55,8 @@
 		C0C244B9243773C000FCF504 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		C0C244BD2437753C00FCF504 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		C0C244BE2437753C00FCF504 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		C0C61FBE243B112000E31204 /* UserListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListInteractor.swift; sourceTree = "<group>"; };
+		C0C61FC0243B117600E31204 /* UserListProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListProviderProtocol.swift; sourceTree = "<group>"; };
 		C0CE39AA24349CB30056FED8 /* UsersListViewControllerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewControllerDataSource.swift; sourceTree = "<group>"; };
 		C0CE39AE24349E6D0056FED8 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 		C0CE39B22434AA0B0056FED8 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -151,7 +155,9 @@
 		C05CB42B2436259D00E852E2 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				C0C61FC0243B117600E31204 /* UserListProviderProtocol.swift */,
 				C041A63224348AE300C86E83 /* User.swift */,
+				C0C61FBE243B112000E31204 /* UserListInteractor.swift */,
 				C041A62F24348A7B00C86E83 /* UserListUseCase.swift */,
 			);
 			path = Data;
@@ -332,6 +338,7 @@
 				C05CB4352436290100E852E2 /* Post.swift in Sources */,
 				C041A6142434812300C86E83 /* AppDelegate.swift in Sources */,
 				C0C244BA243773C000FCF504 /* String+Extension.swift in Sources */,
+				C0C61FC1243B117600E31204 /* UserListProviderProtocol.swift in Sources */,
 				C0635BB424376D470092E804 /* UsersListTableViewCell.swift in Sources */,
 				C05CB4332436279000E852E2 /* UserDetailUseCase.swift in Sources */,
 				C05CB4312436276F00E852E2 /* UserDetailProvider.swift in Sources */,
@@ -341,6 +348,7 @@
 				C04646392434ED6A00C2B3AF /* UsersSearchResultsController.swift in Sources */,
 				C041A63324348AE300C86E83 /* User.swift in Sources */,
 				C0C244BF2437753C00FCF504 /* PostTableViewCell.swift in Sources */,
+				C0C61FBF243B112000E31204 /* UserListInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

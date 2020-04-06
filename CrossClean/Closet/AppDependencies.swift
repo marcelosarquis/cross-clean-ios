@@ -10,6 +10,8 @@ import UIKit
 
 final class AppDependencies: AppCoordinatorDependencies {
     
-    lazy var userListUseCase: UserListUseCase = UserListProvider()
+    let userListProvider = UserListProvider()
+    lazy var userListUseCase: UserListUseCase = UserListInteractor(userListProvider: userListProvider)
+    
     lazy var userDetailUseCase: UserDetailUseCase = UserDetailProvider()
 }

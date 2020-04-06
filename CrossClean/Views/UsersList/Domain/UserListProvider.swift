@@ -9,7 +9,7 @@
 import Foundation
 import Autobahn
 
-final class UserListProvider: UserListUseCase {
+final class UserListProvider: UserListProviderProtocol {
     
     private let network: NetworkProtocol
     init(network: NetworkProtocol = Network()) {

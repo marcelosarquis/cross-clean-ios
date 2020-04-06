@@ -25,9 +25,9 @@ class UsersSearchResultsController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.dataSource = dataSource
         tableView.register(UsersListTableViewCell.nib, forCellReuseIdentifier: UsersListTableViewCell.identifier)
         tableView.tableFooterView = UIView()
-        tableView.dataSource = dataSource
     }
     
     func setupDataSource(with languages: [User]) {
