@@ -40,6 +40,8 @@ Open Terminal and access the root directory of the folder by using `cd Templates
 
 If you wish to uninstall the template just run `make uninstall_templates`.
 
+![alt text](cross_clean_templates.png "Templates")
+
 ## iOS Architecture Example:
 
 This should be a simple app, doing only the bare minimum for displaying data while still to adhearing to your architecture of choice (as if it were in production). This app will have two `UIViewControllers` / `Views`. The first view will be a list of all the users that will be returned from a specifc endpoint and filtered by their email, and the second will be a detail view for that user, which shows a list of all of their posts, which are to be fetched from a second endpoint via the user's ID.
