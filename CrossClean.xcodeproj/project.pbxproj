@@ -11,7 +11,7 @@
 		C041A6182434812300C86E83 /* UsersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C041A6172434812300C86E83 /* UsersListViewController.swift */; };
 		C041A61D2434812600C86E83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C041A61C2434812600C86E83 /* Assets.xcassets */; };
 		C041A6202434812600C86E83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C041A61E2434812600C86E83 /* LaunchScreen.storyboard */; };
-		C041A62C2434890500C86E83 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = C041A62B2434890500C86E83 /* AppDependencies.swift */; };
+		C041A62C2434890500C86E83 /* UserListDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = C041A62B2434890500C86E83 /* UserListDependencies.swift */; };
 		C041A62E24348A5200C86E83 /* UserListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C041A62D24348A5200C86E83 /* UserListProvider.swift */; };
 		C041A63024348A7B00C86E83 /* UserListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C041A62F24348A7B00C86E83 /* UserListUseCase.swift */; };
 		C041A63324348AE300C86E83 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C041A63224348AE300C86E83 /* User.swift */; };
@@ -30,7 +30,7 @@
 		C0CE39A924348CDA0056FED8 /* Autobahn in Frameworks */ = {isa = PBXBuildFile; productRef = C0CE39A824348CDA0056FED8 /* Autobahn */; };
 		C0CE39AB24349CB30056FED8 /* UsersListViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE39AA24349CB30056FED8 /* UsersListViewControllerDataSource.swift */; };
 		C0CE39AF24349E6D0056FED8 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE39AE24349E6D0056FED8 /* UITableViewCell+Extension.swift */; };
-		C0CE39B32434AA0B0056FED8 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE39B22434AA0B0056FED8 /* AppCoordinator.swift */; };
+		C0CE39B32434AA0B0056FED8 /* UserListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE39B22434AA0B0056FED8 /* UserListCoordinator.swift */; };
 		C0FF86E72436384E00F208AC /* UserDetailViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FF86E62436384E00F208AC /* UserDetailViewControllerDataSource.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +41,7 @@
 		C041A61C2434812600C86E83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C041A61F2434812600C86E83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C041A6212434812600C86E83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C041A62B2434890500C86E83 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		C041A62B2434890500C86E83 /* UserListDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListDependencies.swift; sourceTree = "<group>"; };
 		C041A62D24348A5200C86E83 /* UserListProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListProvider.swift; sourceTree = "<group>"; };
 		C041A62F24348A7B00C86E83 /* UserListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListUseCase.swift; sourceTree = "<group>"; };
 		C041A63224348AE300C86E83 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 		C0C61FC0243B117600E31204 /* UserListProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListProviderProtocol.swift; sourceTree = "<group>"; };
 		C0CE39AA24349CB30056FED8 /* UsersListViewControllerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewControllerDataSource.swift; sourceTree = "<group>"; };
 		C0CE39AE24349E6D0056FED8 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
-		C0CE39B22434AA0B0056FED8 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		C0CE39B22434AA0B0056FED8 /* UserListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCoordinator.swift; sourceTree = "<group>"; };
 		C0FF86E62436384E00F208AC /* UserDetailViewControllerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewControllerDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,7 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				C041A6132434812300C86E83 /* AppDelegate.swift */,
-				C041A62B2434890500C86E83 /* AppDependencies.swift */,
+				C041A62B2434890500C86E83 /* UserListDependencies.swift */,
 				C041A61C2434812600C86E83 /* Assets.xcassets */,
 				C041A61E2434812600C86E83 /* LaunchScreen.storyboard */,
 				C041A6212434812600C86E83 /* Info.plist */,
@@ -126,7 +126,7 @@
 		C046463A2434EFEA00C2B3AF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C0CE39B22434AA0B0056FED8 /* AppCoordinator.swift */,
+				C0CE39B22434AA0B0056FED8 /* UserListCoordinator.swift */,
 				C041A62A2434886800C86E83 /* UsersList */,
 				C046463B2434F00A00C2B3AF /* Posts */,
 			);
@@ -330,8 +330,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C05CB4382436339F00E852E2 /* UserDetailViewController.swift in Sources */,
-				C0CE39B32434AA0B0056FED8 /* AppCoordinator.swift in Sources */,
-				C041A62C2434890500C86E83 /* AppDependencies.swift in Sources */,
+				C0CE39B32434AA0B0056FED8 /* UserListCoordinator.swift in Sources */,
+				C041A62C2434890500C86E83 /* UserListDependencies.swift in Sources */,
 				C041A6182434812300C86E83 /* UsersListViewController.swift in Sources */,
 				C0CE39AB24349CB30056FED8 /* UsersListViewControllerDataSource.swift in Sources */,
 				C0FF86E72436384E00F208AC /* UserDetailViewControllerDataSource.swift in Sources */,

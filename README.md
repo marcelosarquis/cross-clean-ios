@@ -33,7 +33,7 @@ Cross-platform CLEAN architecture, or simply Cross-CLEAN, is a simplified versio
 
 #### Install
 
-Open Terminal and access the root directory of the folder by using `cd Templates`
+Open Terminal and access the root directory of the folder by using `cd cross_clean_templates`
  `make install_templates`
 
 #### Uninstall

@@ -1,5 +1,5 @@
 //
-//  AppCoordinator.swift
+//  UserListCoordinator.swift
 //  SimplefiedCleanApp
 //
 //  Created by Marcelo Sarquis on 01.04.20.
@@ -9,18 +9,18 @@
 import Foundation
 import UIKit
 
-protocol AppCoordinatorDependencies: UsersListViewControllerDependencies, UserDetailViewControllerDependencies {}
+protocol UserListCoordinatorDependencies: UsersListViewControllerDependencies, UserDetailViewControllerDependencies {}
 
-class AppCoordinator {
+class UserListCoordinator {
     
     private let window: UIWindow
-    private let dependencies: AppCoordinatorDependencies
+    private let dependencies: UserListCoordinatorDependencies
     private let navigation: UINavigationController
-    convenience init(dependencies: AppCoordinatorDependencies) {
+    convenience init(dependencies: UserListCoordinatorDependencies) {
         self.init(window: UIWindow(frame: UIScreen.main.bounds), dependencies: dependencies)
     }
 
-    init(window: UIWindow, dependencies: AppCoordinatorDependencies) {
+    init(window: UIWindow, dependencies: UserListCoordinatorDependencies) {
         self.window = window
         self.dependencies = dependencies
         navigation = UINavigationController()
@@ -36,7 +36,7 @@ class AppCoordinator {
     }
 }
 
-extension AppCoordinator: UsersListViewControllerDelegate {
+extension UserListCoordinator: UsersListViewControllerDelegate {
     
     func usersViewControlleDidFinish(with error: Error) {
         print(error) // handle error
@@ -49,7 +49,7 @@ extension AppCoordinator: UsersListViewControllerDelegate {
     }
 }
 
-extension AppCoordinator: UserDetailViewControllerDelegate {
+extension UserListCoordinator: UserDetailViewControllerDelegate {
     func detailsViewControlleDidFinish(with error: Error) {
         print(error) // handle error
     }

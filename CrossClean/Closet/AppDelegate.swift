@@ -11,12 +11,12 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    private var appCoordinator: AppCoordinator!
+    private var userListCoordinator: UserListCoordinator!
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        appCoordinator = AppCoordinator(dependencies: AppDependencies())
-        appCoordinator.start()
+        userListCoordinator = UserListCoordinator(dependencies: UserListDependencies())
+        userListCoordinator.start()
         
         return true
     }

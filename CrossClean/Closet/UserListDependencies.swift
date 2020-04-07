@@ -1,5 +1,5 @@
 //
-//  AppDependencies.swift
+//  UserListDependencies.swift
 //  SimplefiedCleanApp
 //
 //  Created by Marcelo Sarquis on 01.04.20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class AppDependencies: AppCoordinatorDependencies {
+final class UserListDependencies: UserListCoordinatorDependencies {
     
     let userListProvider = UserListProvider()
     lazy var userListUseCase: UserListUseCase = UserListInteractor(userListProvider: userListProvider)
